@@ -3,7 +3,7 @@ package guru.springframework.didemo.controllers;
 import guru.springframework.didemo.services.GreetingService;
 
 public class SetterInjectedController {
-    GreetingService greetingService;
+    private GreetingService greetingService;
 
     public String sayHello() {
         return greetingService.sayGreeting();
